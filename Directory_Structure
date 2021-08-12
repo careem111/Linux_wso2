@@ -1,3 +1,9 @@
+dn: dc=ltacademy, dc=com
+dc: ltacademy
+o: ltacademy
+objectclass: organization
+objectclass: dcObject
+
 dn: ou=London,ou=permanent,ou=staff,dc=ltacademy,dc=com
 objectclass: organizationalunit
 ou: London
