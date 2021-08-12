@@ -1,0 +1,78 @@
+dn: cn=Data Smart,ou=Books,dc=ltacademy,dc=com
+objectClass: document
+objectClass: top
+cn: Data Smart
+documentIdentifier: 1001
+documentPublisher: Wiley
+
+
+
+dn: cn=God Created the Integers,ou=Books,dc=ltacademy,dc=com
+objectClass: document
+objectClass: top
+cn: God Created the Integers
+documentIdentifier: 1002
+documentPublisher: Penguin
+
+
+
+dn: cn=Superfreakonomics,ou=Books,dc=ltacademy,dc=com
+objectClass: document
+objectClass: top
+cn: Superfreakonomics
+documentIdentifier: 1003
+documentPublisher: HarperCollins
+
+
+
+dn: cn=Orientalism,ou=Books,dc=ltacademy,dc=com
+objectClass: document
+objectClass: top
+cn: Orientalism
+documentIdentifier: 1004
+documentPublisher: Penguin
+
+
+
+dn: cn=The Nature of Statistical Learning Theory,ou=Books,dc=ltacademy,dc=com
+objectClass: document
+objectClass: top
+cn: The Nature of Statistical Learning Theory
+documentIdentifier: 1005
+documentPublisher: Springer
+
+
+
+dn: cn=Integration of the Indian States,ou=Books,dc=ltacademy,dc=com
+objectClass: document
+objectClass: top
+cn: Integration of the Indian States
+documentIdentifier: 1006
+documentPublisher: Orient Blackswan
+
+
+
+dn: cn=THe Drunkard's Walk,ou=Books,dc=ltacademy,dc=com
+objectClass: document
+objectClass: top
+cn: THe Drunkard's Walk
+documentIdentifier: 1007
+documentPublisher: Penguin
+
+
+
+dn: cn=Image Processing & Mathematical Morphology,ou=Books,dc=ltacademy,dc=com
+objectClass: document
+objectClass: top
+cn: Image Processing & Mathematical Morphology
+documentIdentifier: 1008
+documentPublisher: CRC
+
+
+
+dn: cn=How to Think Like Sherlock Holmes,ou=Books,dc=ltacademy,dc=com
+objectClass: document
+objectClass: top
+cn: How to Think Like Sherlock Holmes
+documentIdentifier: 1009
+documentPublisher: CRC
