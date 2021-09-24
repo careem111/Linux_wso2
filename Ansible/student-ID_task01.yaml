@@ -1,0 +1,41 @@
+---
+- name: install apache
+  hosts: centos
+  tasks:
+   - name: Install apache
+     yum:
+       name: httpd
+       state: latest
+
+   - name: start the service
+     service:
+       name: httpd
+       state: started
+       enabled: true
+
+   - name: allow the service from the firewall
+     firewalld:
+       service: http
+       permanent: yes
+       state: enabled
+       immediate: yes
+     notify: restart firewall
+    
+   - name: copy index file
+     template:
+       src: ./hostfile.j2
+       dest: /var/www/html/index.html
+     notify: restart httpd
+
+  handlers:
+    - name: restart firewall
+      service:
+        name: firewalld
+        state: restarted
+
+    - name: restart httpd
+      service:
+        name: httpd
+        state: restarted
+
+
