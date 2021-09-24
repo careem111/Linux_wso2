@@ -1,0 +1,4 @@
+- name: install apache with roles
+  hosts: centos
+  roles:
+    - web-stg
