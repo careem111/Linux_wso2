@@ -17,7 +17,7 @@
     state: enabled
     immediate: yes
   notify: restart firewall
-    
+
 - name: copy index file
   template:
     src: ./hostfile.j2
@@ -26,10 +26,11 @@
 
 - name: change the hostname
   ansible.builtin.hostname:
-    name: student-ID-webserver1
+    name: LT-2021-083-webserver1
   when: ansible_facts['nodename'] == "host1"
 
 - name: change the hostname
   ansible.builtin.hostname:
-    name: student-ID-webserver2
-  when: ansible_facts['nodename'] == "host2" 
+    name: LT-2021-083-webserver2
+  when: ansible_facts['nodename'] == "host2"
+
