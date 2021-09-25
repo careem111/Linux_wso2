@@ -1,0 +1,22 @@
+- name: update the webserver1
+  yum:
+   name: '*'
+   state: latest
+   update_cache: true
+  when: ansible_facts['nodename'] == "LT-2021-083-webserver1"
+
+- name: Print service facts
+  service_facts:
+
+- name: Service status webserver1
+  debug:
+    msg: "{{ansible_facts.services['httpd.service'].state}}"
+  register: apache_state
+  when: ansible_facts['nodename'] == "LT-2021-083-webserver1"
+
+- name: update the webserver2
+  yum:
+   name: '*'
+   state: latest
+   update_cache: true
+  when: ansible_facts['nodename'] == "LT-2021-083-webserver2" or ( apache_state == 'running')
